@@ -9,9 +9,6 @@
 # - When you import `__main__` it will get executed again (as a module) because
 #   there's no `poetry_issue_2369.__main__` in `sys.modules`.
 
-"""Module that contains the command line application."""
-
 
 def main(args=None):
-    """The main function, which is executed when you type `poetry_issue_2369` or `python -m poetry_issue_2369`."""
     return 1

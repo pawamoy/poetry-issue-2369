@@ -11,17 +11,7 @@
 
 """Module that contains the command line application."""
 
-import argparse
-
-
-def get_parser():
-    """Return the CLI argument parser."""
-    return argparse.ArgumentParser(prog="poetry-issue-2369")
-
 
 def main(args=None):
     """The main function, which is executed when you type `poetry_issue_2369` or `python -m poetry_issue_2369`."""
-    parser = get_parser()
-    opts = parser.parse_args(args=args)
-    print(opts)
     return 1

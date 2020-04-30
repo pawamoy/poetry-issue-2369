@@ -1,0 +1,25 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "poetry-issue-2369"
+version = "0.1.0"
+description = "poetry run does not relay exit code"
+authors = ["Timothée Mazzucotelli <pawamoy@pm.me>"]
+license = "ISC License"
+readme = "README.md"
+repository = "https://github.com/pawamoy/poetry-issue-2369"
+homepage = "https://github.com/pawamoy/poetry-issue-2369"
+keywords = []
+packages = [ { include = "poetry_issue_2369", from = "src" } ]
+include = [
+    "README.md",
+    "pyproject.toml"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.scripts]
+poetry-issue-2369 = "poetry_issue_2369.cli:main"
